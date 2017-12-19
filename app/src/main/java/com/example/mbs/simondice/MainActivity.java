@@ -1,9 +1,8 @@
 package com.example.mbs.simondice;
-import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity{
     Button botonesColor[];
@@ -39,7 +37,8 @@ public class MainActivity extends AppCompatActivity{
 
 
         };
-
+       final MediaPlayer mp1 = MediaPlayer.create(MainActivity.this,R.raw.botonstart);
+        final MediaPlayer mp = MediaPlayer.create(MainActivity.this,R.raw.boton_1);
 
         btnStart = findViewById(R.id.btnStart);
 
@@ -47,6 +46,7 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 comprobar(0);
+                mp.start();
             }
         });
 
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 comprobar(1);
+                mp.start();
             }
         });
 
@@ -61,12 +62,14 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 comprobar(2);
+                mp.start();
             }
         });
         botonesColor[3].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 comprobar(3);
+                mp.start();
             }
         });
 
@@ -74,6 +77,7 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
 
+            mp1.start();
 
            combinacionColores();
 

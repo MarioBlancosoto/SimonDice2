@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.mbs.simondice.MainActivity"
+    android:background="@drawable/simon"
     tools:showIn="@layout/activity_main">
 
     <LinearLayout
@@ -99,7 +100,7 @@
                 android:lineSpacingExtra="12sp"
                 android:text="PUNTUACIÓN :"
                 android:textAlignment="center"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="30sp"
                 android:typeface="sans" />
 
@@ -112,7 +113,7 @@
                 android:lineSpacingExtra="12sp"
                 android:text="NIVEL:"
                 android:textAlignment="center"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="30sp"
                 android:typeface="sans" />
         </LinearLayout>
